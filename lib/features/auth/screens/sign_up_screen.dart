@@ -56,6 +56,7 @@ class SignUpScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 //<=== Sign In Function Here ===>
+                Get.toNamed(RoutesName.aiAssistant);
               },
               child: Text(AppString.continueText),
             ),

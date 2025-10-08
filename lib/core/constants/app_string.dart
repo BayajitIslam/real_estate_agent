@@ -16,11 +16,28 @@ class AppString {
   static const String dontHaveAccount = "Don’t have an account? ";
   static const String signUpHere = "sign up here";
 
+  //<===================== Sign Up Screen =====================>
+
   static const String signUp = "Sign Up";
   static const String allreadyHaveaccount = "Already have an account?";
   static const String signinHere = "sign in here";
 
+  //<=====================   Introducong AI Assistant =====================>
+  static const String aiAssistant = "Introducing AI Assistant";
+  static const String letOurAiDo =
+      """Let our AI do the hunting—just tell it what you need. Find homes faster with personalized suggestions, smart filters, and instant answers.""";
+  static const String next = "Next";
+  static const String instantReccomend = "Instant Recommendations";
+  static const String noMoreEndless =
+      """No more endless scrolling—just describe what you want, we’ll suggest instantly.""";
+
   //<===================== Whatsapp AI Notification =====================>
 
   static const String skip = "Skip";
+  static const String whatsappAiNoti = "Whatsapp AI Notification";
+  static const String theMoreWeKnow = "The more we know, the better we match.";
+  static const String enterWhatsappNum = "Enter your whatsapp number";
+  static const String leoUlla =
+      "Leo ullamcorper placerat habitasse orci laoreet facilisis eget id. Ullamcorper augue.";
+  static const String sanFrancisco = "San Francisco";
 }

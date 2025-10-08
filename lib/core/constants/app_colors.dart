@@ -11,4 +11,7 @@ class AppColors {
   static const Color whiteText = Color(0xFFFFFFFF);
   static const Color textFieldBorder = Color.fromRGBO(0, 0, 0, 0.1);
   static const Color socialCardBorder = Color(0xFFE1E1E1);
+  static const Color yellow = Color(0xFFF6D74C);
+  static const Color black70 = Color.fromRGBO(0, 0, 0, 0.7);
+  static const Color grey = Color(0xFFF1F2F4);
 }

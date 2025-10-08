@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:template/core/constants/app_colors.dart';
 import 'package:template/core/constants/app_image_const.dart';
 import 'package:template/core/constants/app_string.dart';
 import 'package:template/features/auth/widgets/custom_button.dart';
+import 'package:template/routes/routes_name.dart';
 
 class AuthBackground extends StatelessWidget {
   const AuthBackground({
@@ -12,7 +14,7 @@ class AuthBackground extends StatelessWidget {
     this.isSkipButton = false,
     this.topPostion = 0.57,
     this.bgImage = AppImages.authBackgroundV2,
-    this.imageHeight = 389
+    this.imageHeight = 389,
   });
 
   final Widget widget;
@@ -41,26 +43,31 @@ class AuthBackground extends StatelessWidget {
             //<===================== Appbar  =====================>
             child: SafeArea(
               maintainBottomViewPadding: true,
-              minimum: EdgeInsets.only(top: 12.h, left: 14.w, right: 17.w),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  //<===================== Logo Here =====================>
-                  Image.asset(AppImages.realEstateLogo, fit: BoxFit.cover),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 12.0, left: 14, right: 17),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    //<===================== Logo Here =====================>
+                    Image.asset(AppImages.realEstateLogo, fit: BoxFit.cover),
 
-                  //<===================== Skip Button If Need =====================>
-                  isSkipButton
-                      ? SizedBox(
-                          height: 40.h,
-                          width: 80.w,
-                          child: CustomeSkipButton(
-                            text: AppString.skip,
-                            onPressed: () {},
-                          ),
-                        )
-                      : Container(),
-                ],
+                    //<===================== Skip Button If Need =====================>
+                    isSkipButton
+                        ? SizedBox(
+                            height: 40.h,
+                            width: 80.w,
+                            child: CustomeSkipButton(
+                              text: AppString.skip,
+                              onPressed: () {
+                                //<===================== Route To Home ===========>
+                                Get.toNamed(RoutesName.home);
+                              },
+                            ),
+                          )
+                        : Container(),
+                  ],
+                ),
               ),
             ),
           ),
