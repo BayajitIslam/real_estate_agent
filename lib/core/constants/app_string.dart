@@ -16,6 +16,10 @@ class AppString {
   static const String dontHaveAccount = "Don’t have an account? ";
   static const String signUpHere = "sign up here";
 
+  static const String signUp = "Sign Up";
+  static const String allreadyHaveaccount = "Already have an account?";
+  static const String signinHere = "sign in here";
+
   //<===================== Whatsapp AI Notification =====================>
 
   static const String skip = "Skip";
