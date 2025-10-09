@@ -40,4 +40,22 @@ class AppString {
   static const String leoUlla =
       "Leo ullamcorper placerat habitasse orci laoreet facilisis eget id. Ullamcorper augue.";
   static const String sanFrancisco = "San Francisco";
+
+  //<=====================   Your Listing ====================>
+  static const String boost = "Boost";
+  static const String accepted = "Accepted";
+  static const String waiting = "Waiting";
+  static const String listingDate = "Listing date:";
+  static const String active = "Active";
+  static const String searchYourListing = "Search your listing";
+  static const String yourListing = "Your Listing";
+  static const String sqft = "sqft";
+  static const String dummyDesctiption =
+      """The architectural firm has done an exceptional job, preserving the building's historical essence, its traditional Cádiz façade and patio, enhanced by a classic design that combines with the vanguard design and materials of the interior. It is being marketed once the work is finished, at the express wish of the developer, so that new owners have the privilege of buying a turnkey property, with immediate delivery and in an exceptional location with exceptional qualities.
+
+14 homes with 1 to 3 bedrooms, 3 homes per floor and a penthouse with spectacular views of Cádiz. From 74 to 158 m² built, assigned storage room in the same building, to be added to the operation, as they are considered two different registered properties. Accessible by elevator from the basement to the homes. All developed under a Partner agreement with Porcelanosa.
+
+All homes have two bathrooms, one of them en suite in the master bedroom. Porcelanosa fitted kitchen and BOSH appliances, details that make the difference, such as Mitsubishi air conditioning with Koolnova zone temperature distribution system, heated towel rails in bathrooms, backlit mirrors with anti-fog system, shower screens, mostly installed lighting, fitted wardrobes with drawers, motorized exterior blinds and automatic mobile-directed door entry system, details that make the difference in a quality home.
+
+Request information today, we will contact you immediately.""";
 }

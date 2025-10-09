@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
-import 'package:template/features/home/controllers/home_controller.dart';
+import 'package:template/features/home/controllers/navigation_controller.dart';
 
-class HomeBinding extends Bindings {
+class NavigationBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => HomeController(), fenix: true);
+    Get.lazyPut(() => NavigationController(), fenix: true);
   }
 }

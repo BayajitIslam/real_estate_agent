@@ -1,5 +1,6 @@
 class RoutesName {
-  static const String home = "/";
+  static const String home = "/home";
+  static const String homeContent = "/homeContent";
 
   //<===================== Auth Screen =====================>
   static const String signUp = "/signUpScreen";
