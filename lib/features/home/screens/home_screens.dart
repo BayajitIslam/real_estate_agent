@@ -17,7 +17,7 @@ class HomeScreen extends GetView<YourListingBinding> {
     const YourListingScreen(),
     const CalendarScreens(),
     const ChatListScreen(),
-    const ProfileScreens(),
+    const ProfileScreen(),
   ];
 
   @override

@@ -26,4 +26,10 @@ class AppImages {
   static const String bathtubIcon = "assets/icons/Bathtub.svg";
   static const String stackSimpleIcon = "assets/icons/StackSimple.svg";
   static const String sendMessageIcon = "assets/icons/send_message.svg";
+  static const String kingIcon = "assets/icons/king.svg";
+  static const String tagIcon = "assets/icons/tag_Simple.svg";
+  static const String lineSegmentIcon = "assets/icons/line_segment.svg";
+  static const String homeProfileIcon = "assets/icons/home_v2_profile.svg";
+  static const String circleDashedIcon = "assets/icons/circleDashed.svg";
+
 }

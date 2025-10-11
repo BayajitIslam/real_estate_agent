@@ -16,4 +16,5 @@ class AppColors {
   static const Color grey = Color(0xFFF1F2F4);
   static const Color buttonBgYellow = Color(0xFFF6D74C);
   static const Color black10 = Color.fromRGBO(0, 0, 0, 0.1);
+  static const Color orange = Color(0xFFFDB022);
 }

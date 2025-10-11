@@ -63,4 +63,17 @@ Request information today, we will contact you immediately.""";
   static const String searchYourChat = "Search your chat";
   static const String chat = "Chat";
   static const String enterMessage = "Enter message";
+
+  //<=====================   Profile Screen ====================>
+  static const String profile = "Profile";
+  static const String superAgent = "Super Agent";
+  static const String editProfile = "Edit profile";
+  static const String integration = "Integration";
+  static const String mydetails = "My details";
+  static const String averageRating = "Average rating";
+  static const String languages = "Languages";
+  static const String amountOfList = "Amount of listing";
+  static const String propertiesSold = "Properties sold";
+  static const String storyUploaded = "Story uploaded";
+  static const String yourBioHere = "Your Bio Here";
 }

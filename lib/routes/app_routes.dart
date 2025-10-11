@@ -10,6 +10,8 @@ import 'package:template/features/home/bindings/home_binding.dart';
 import 'package:template/features/home/bindings/home_content_binding.dart';
 import 'package:template/features/home/screens/your_listing_screen.dart';
 import 'package:template/features/home/screens/home_screens.dart';
+import 'package:template/features/profile/bindings/profile_binding.dart';
+import 'package:template/features/profile/screens/profile_screens.dart';
 import 'package:template/routes/routes_name.dart';
 
 class AppRoutes {
@@ -18,7 +20,7 @@ class AppRoutes {
       name: RoutesName.home,
       page: () => HomeScreen(),
       transition: Transition.rightToLeft,
-      bindings: [NavigationBinding(), YourListingBinding()],
+      bindings: [NavigationBinding(), YourListingBinding(),ProfileBinding()],
     ),
     GetPage(
       name: RoutesName.homeContent,
@@ -60,6 +62,12 @@ class AppRoutes {
       name: RoutesName.chatListScreen,
       page: () => ChatListScreen(),
       transition: Transition.rightToLeft,
+    ),
+    GetPage(
+      name: RoutesName.profileScreen,
+      page: () => ProfileScreen(),
+      transition: Transition.rightToLeft,
+      binding: ProfileBinding()
     ),
   ];
 }

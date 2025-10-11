@@ -7,9 +7,9 @@ class MyAppThemes {
   static ThemeData get lightThemes => ThemeData(
     brightness: Brightness.light,
 
-   //<===================== Font Family =====================>
+    //<===================== Font Family =====================>
     fontFamily: GoogleFonts.openSans().fontFamily,
-    
+
     //<===================== Elevated Button =====================>
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
@@ -71,4 +71,3 @@ class MyAppThemes {
     scaffoldBackgroundColor: AppColors.background,
   );
 }
-
