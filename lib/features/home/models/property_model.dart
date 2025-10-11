@@ -4,7 +4,7 @@ class PropertyModel {
   final String id;
   final double price;
   final String title;
-  final int stackSimple;
+  final int flore;
   final int bedrooms;
   final int bathrooms;
   final int area;
@@ -19,7 +19,7 @@ class PropertyModel {
     required this.id,
     required this.price,
     required this.title,
-    required this.stackSimple,
+    required this.flore,
     required this.bedrooms,
     required this.bathrooms,
     required this.area,

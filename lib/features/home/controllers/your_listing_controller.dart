@@ -47,7 +47,7 @@ class YourListingController extends GetxController {
         id: '${index + 1}',
         price: 692000 + (index * 50000),
         title: index % 2 == 0 ? 'Apartment' : 'House',
-        stackSimple: 2 + (index % 3),
+        flore: 2 + (index % 3),
         bedrooms: 3 + (index % 3),
         bathrooms: 3 + (index % 2),
         area: 822 + (index * 100),

@@ -23,7 +23,7 @@ class PropertyFeatures extends StatelessWidget {
         ),
         _buildFeature(
           context,
-          '${property.bathrooms}',
+          '${property.flore}',
           AppImages.stackSimpleIcon,
         ),
         SizedBox(width: 8.w),

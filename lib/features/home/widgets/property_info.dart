@@ -95,7 +95,7 @@ class PropertyInfo extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
           ),
 
-          //<================================== Bosost Button & More Info Button  ==========================>
+          //<================================== Boost Button & More Info Button  ==========================>
           SizedBox(height: 12.h),
           if (property.isBoosted) const BoostButton(),
         ],

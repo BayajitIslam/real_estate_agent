@@ -104,7 +104,11 @@ class ChatConversationScreen extends StatelessWidget {
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.r),
-                      borderSide: BorderSide(color: AppColors.buttonBackground),
+                      borderSide: BorderSide(
+                        color: AppColors.buttonBackground,
+                        width: 1,
+                        strokeAlign: BorderSide.strokeAlignOutside,
+                      ),
                     ),
                     hintText: AppString.enterMessage,
                     hintStyle: TextStyle(
@@ -112,10 +116,10 @@ class ChatConversationScreen extends StatelessWidget {
                       fontSize: 16.sp,
                       fontWeight: FontWeight.w400,
                     ),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(16.r),
+                    enabledBorder: OutlineInputBorder(
+                       borderRadius: BorderRadius.circular(16.r),
                       borderSide: BorderSide(
-                        color: AppColors.black10,
+                        color: AppColors.background,
                         width: 1,
                         strokeAlign: BorderSide.strokeAlignOutside,
                       ),
