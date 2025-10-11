@@ -11,6 +11,7 @@ import 'package:template/features/profile/widgets/my_details_section.dart';
 import 'package:template/features/profile/widgets/profile_header.dart';
 import 'package:template/features/profile/widgets/statistics_section.dart';
 import 'package:template/features/widgets/circle_button_with_border.dart';
+import 'package:template/routes/routes_name.dart';
 
 class ProfileScreen extends GetView<ProfileController> {
   const ProfileScreen({super.key});
@@ -33,6 +34,7 @@ class ProfileScreen extends GetView<ProfileController> {
             icon: Icons.settings_outlined,
             onTap: () {},
           ),
+          SizedBox(width: 16.h),
         ],
       ),
       body: Obx(() {
@@ -81,7 +83,11 @@ class ProfileScreen extends GetView<ProfileController> {
                 SizedBox(height: 16.h),
 
                 // Integration Button
-                IntegrationTile(onTap: controller.openIntegration),
+                IntegrationTile(
+                  onTap: () {
+                    Get.toNamed(RoutesName.integrationScreen);
+                  },
+                ),
 
                 SizedBox(height: 24.h),
 

@@ -31,5 +31,8 @@ class AppImages {
   static const String lineSegmentIcon = "assets/icons/line_segment.svg";
   static const String homeProfileIcon = "assets/icons/home_v2_profile.svg";
   static const String circleDashedIcon = "assets/icons/circleDashed.svg";
-
+  static const String facebookSvgIcon = "assets/icons/facebook_svg.svg";
+  static const String googleSvgIcon = "assets/icons/google_svg.svg";
+  static const String twiterXIcon = "assets/icons/twiterX.svg";
+  static const String instramIcon = "assets/icons/instagram.svg";
 }

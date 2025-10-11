@@ -35,7 +35,7 @@ class CircleButtonWithBorder extends StatelessWidget {
         child: CircleAvatar(
           radius: radius.r,
           backgroundColor: Colors.transparent,
-          child: isIcon ? Icon(icon, size: 20) : SvgPicture.asset(svgimageIcon),
+          child: isIcon ? Icon(icon, size: 20,color: AppColors.black,) : SvgPicture.asset(svgimageIcon),
         ),
       ),
     );

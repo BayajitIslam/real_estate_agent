@@ -76,4 +76,15 @@ Request information today, we will contact you immediately.""";
   static const String propertiesSold = "Properties sold";
   static const String storyUploaded = "Story uploaded";
   static const String yourBioHere = "Your Bio Here";
+
+  //<=====================   Profile Integration Screen ====================>
+  static const String searchPlatform = "Search platform";
+  static const String facebook = "Facebook";
+  static const String google = "Google";
+  static const String connected = "Connected";
+  static const String accesAnsShare =
+      "Access and share avaibility on any web page.";
+  static const String disconnected = "Disconnected";
+  static const String x = "X";
+  static const String instagram = "Instagram";
 }

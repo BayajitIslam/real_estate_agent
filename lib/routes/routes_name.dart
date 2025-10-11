@@ -4,6 +4,7 @@ class RoutesName {
   static const String chatListScreen = "/chatListScreen";
   static const String chatConversation = "/chatConversationAScreen";
   static const String profileScreen = "/profile";
+  static const String integrationScreen = "/Integration";
 
 
   //<===================== Auth Screen =====================>

@@ -68,6 +68,7 @@ class ChatConversationScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Property Card
+          SizedBox(height: 16.h),
           PropertyMessageCard(property: property),
 
           // Messages
@@ -117,7 +118,7 @@ class ChatConversationScreen extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                     ),
                     enabledBorder: OutlineInputBorder(
-                       borderRadius: BorderRadius.circular(16.r),
+                      borderRadius: BorderRadius.circular(16.r),
                       borderSide: BorderSide(
                         color: AppColors.background,
                         width: 1,
