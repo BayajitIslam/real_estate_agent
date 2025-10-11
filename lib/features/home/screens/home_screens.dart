@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:template/features/calendar/screens/calendar_screens.dart';
-import 'package:template/features/chat/screens/chat_screens.dart';
+import 'package:template/features/chat/screens/chat_list_screens.dart';
 import 'package:template/features/home/bindings/home_content_binding.dart';
 import 'package:template/features/home/controllers/navigation_controller.dart';
 import 'package:template/features/home/screens/your_listing_screen.dart';
@@ -16,7 +16,7 @@ class HomeScreen extends GetView<YourListingBinding> {
   final List<Widget> pages = [
     const YourListingScreen(),
     const CalendarScreens(),
-    const ChatScreens(),
+    const ChatListScreen(),
     const ProfileScreens(),
   ];
 

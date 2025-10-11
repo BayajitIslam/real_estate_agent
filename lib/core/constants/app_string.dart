@@ -58,4 +58,9 @@ class AppString {
 All homes have two bathrooms, one of them en suite in the master bedroom. Porcelanosa fitted kitchen and BOSH appliances, details that make the difference, such as Mitsubishi air conditioning with Koolnova zone temperature distribution system, heated towel rails in bathrooms, backlit mirrors with anti-fog system, shower screens, mostly installed lighting, fitted wardrobes with drawers, motorized exterior blinds and automatic mobile-directed door entry system, details that make the difference in a quality home.
 
 Request information today, we will contact you immediately.""";
+
+  //<=====================   Chat list Screen ====================>
+  static const String searchYourChat = "Search your chat";
+  static const String chat = "Chat";
+  static const String enterMessage = "Enter message";
 }

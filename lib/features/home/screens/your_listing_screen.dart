@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:get/get_state_manager/src/simple/get_view.dart';
 import 'package:template/core/constants/app_colors.dart';
-import 'package:template/core/constants/app_image_const.dart';
 import 'package:template/core/constants/app_string.dart';
 import 'package:template/features/home/controllers/your_listing_controller.dart';
-import 'package:template/features/home/widgets/custom_search_bar.dart';
+import 'package:template/features/widgets/circle_button_with_border.dart';
+import 'package:template/features/widgets/custom_search_bar.dart';
 import 'package:template/features/home/widgets/empty_state.dart';
 import 'package:template/features/home/widgets/listing_header.dart';
 import 'package:template/features/home/widgets/property_card.dart';
@@ -41,20 +40,10 @@ class YourListingScreen extends GetView<YourListingController> {
 
                   //<===================== Filter Button =====================>
                   SizedBox(width: 12.h),
-                  Container(
-                    padding: const EdgeInsets.all(2), // border thickness
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: AppColors.textFieldBorder, // your border color
-                        width: 1, // border width
-                      ),
-                    ),
-                    child: CircleAvatar(
-                      radius: 24.r,
-                      backgroundColor: Colors.transparent,
-                      child: SvgPicture.asset(AppImages.filterIcon),
-                    ),
+                  CircleButtonWithBorder(
+                    onTap:() {
+                      //<===================== Filter Button Fuction =====================>
+                    } ,
                   ),
                 ],
               ),

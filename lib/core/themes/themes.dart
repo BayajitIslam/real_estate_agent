@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:template/core/constants/app_colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyAppThemes {
   static ThemeData get lightThemes => ThemeData(
     brightness: Brightness.light,
+
+   //<===================== Font Family =====================>
+    fontFamily: GoogleFonts.openSans().fontFamily,
+    
     //<===================== Elevated Button =====================>
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
@@ -26,6 +31,13 @@ class MyAppThemes {
 
     //<===================== Text Theme =====================>
     textTheme: TextTheme(
+      titleSmall: TextStyle(
+        color: AppColors.black,
+        fontSize: 24.sp,
+        fontWeight: FontWeight.w600,
+        height: 1.0,
+        letterSpacing: 0.068,
+      ),
       titleMedium: TextStyle(
         color: AppColors.black,
         fontSize: 32.sp,
@@ -59,3 +71,4 @@ class MyAppThemes {
     scaffoldBackgroundColor: AppColors.background,
   );
 }
+

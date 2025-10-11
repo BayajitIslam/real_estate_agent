@@ -4,6 +4,8 @@ import 'package:template/features/auth/screens/onboarding_screen.dart';
 import 'package:template/features/auth/screens/sign_in_screen.dart';
 import 'package:template/features/auth/screens/sign_up_screen.dart';
 import 'package:template/features/auth/screens/whatsapp_ai_notification.dart';
+import 'package:template/features/chat/screens/chat_conversation_screen.dart';
+import 'package:template/features/chat/screens/chat_list_screens.dart';
 import 'package:template/features/home/bindings/home_binding.dart';
 import 'package:template/features/home/bindings/home_content_binding.dart';
 import 'package:template/features/home/screens/your_listing_screen.dart';
@@ -47,6 +49,16 @@ class AppRoutes {
     GetPage(
       name: RoutesName.whatsappAiNotification,
       page: () => WhatsappAiNotification(),
+      transition: Transition.rightToLeft,
+    ),
+    GetPage(
+      name: RoutesName.chatConversation,
+      page: () => ChatConversationScreen(),
+      transition: Transition.rightToLeft,
+    ),
+    GetPage(
+      name: RoutesName.chatListScreen,
+      page: () => ChatListScreen(),
       transition: Transition.rightToLeft,
     ),
   ];

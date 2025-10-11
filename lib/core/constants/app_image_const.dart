@@ -25,4 +25,5 @@ class AppImages {
   static const String rulerIcon = "assets/icons/Ruler.svg";
   static const String bathtubIcon = "assets/icons/Bathtub.svg";
   static const String stackSimpleIcon = "assets/icons/StackSimple.svg";
+  static const String sendMessageIcon = "assets/icons/send_message.svg";
 }
