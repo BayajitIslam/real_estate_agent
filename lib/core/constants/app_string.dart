@@ -61,6 +61,43 @@ All homes have two bathrooms, one of them en suite in the master bedroom. Porcel
 
 Request information today, we will contact you immediately.""";
 
+  static const String media = "Media";
+  static const String editDetails = "Edit Details";
+  static const String keyInformation = "Key Information";
+  static const String address = "Address";
+  static const String city = "City";
+  static const String zipCode = "ZIP Code";
+  static const String state = "State";
+  static const String country = "Country";
+  static const String salesPrice = "Sales price";
+  static const String thisListingIsOnLYThisPlatform =
+      "This listing is only published on this platform";
+  static const String additonalInfo = "Additional information";
+  static const String areaSize = "Area size";
+  static const String livingSpace = "Living Space";
+  static const String bedroom = "Bedroom";
+  static const String bathroom = "Bathroom";
+  static const String facilities = "Facilities";
+  static const String energyCertificate = "Energy certificate";
+  static const String energyRating = "Energy Rating";
+  static const String consumtion = "Consumtion";
+  static const String emission = "Emission";
+  static const String listingDescription = "Listing description";
+  static const String english = "English";
+  static const String viewMore = "View more";
+  static const String readMore = "Read more";
+  static const String propertyInsight = "Property insight";
+  static const String activity = "Activity";
+  static const String basePrice = "Base Price";
+  static const String negotiationRange = "Negotiation Range";
+  static const String expiryDate = "Expiry Date";
+  static const String documents = "Documents";
+  static const String uploadMore = "Upload more";
+  static const String contactInformation = "Contact information";
+  static const String propertyDetails = "Property Details";
+  static const String infoNecessaryTocreate =
+      "This information is necessary to create the listing.";
+
   //<=====================   Chat list Screen ====================>
   static const String searchYourChat = "Search your chat";
   static const String chat = "Chat";

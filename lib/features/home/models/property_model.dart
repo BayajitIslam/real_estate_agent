@@ -8,8 +8,12 @@ class PropertyModel {
   final int bedrooms;
   final int bathrooms;
   final int area;
+  final String city;
   final String address;
-  final String imageUrl;
+  final String zipCode;
+  final String state;
+  final String country;
+  final List<String> imageUrl;
   final String status;
   final String listingDate;
   final bool isBoosted;
@@ -23,6 +27,10 @@ class PropertyModel {
     required this.bedrooms,
     required this.bathrooms,
     required this.area,
+    required this.city,
+    required this.zipCode,
+    required this.state,
+    required this.country,
     required this.address,
     required this.imageUrl,
     required this.status,

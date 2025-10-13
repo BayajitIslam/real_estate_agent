@@ -35,4 +35,5 @@ class AppImages {
   static const String googleSvgIcon = "assets/icons/google_svg.svg";
   static const String twiterXIcon = "assets/icons/twiterX.svg";
   static const String instramIcon = "assets/icons/instagram.svg";
+  static const String deletIcon = "assets/icons/delet.svg";
 }

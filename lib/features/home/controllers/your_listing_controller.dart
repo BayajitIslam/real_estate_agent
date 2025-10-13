@@ -51,9 +51,18 @@ class YourListingController extends GetxController {
         bedrooms: 3 + (index % 3),
         bathrooms: 3 + (index % 2),
         area: 822 + (index * 100),
+        city: "Auburn",
+        zipCode: "99001",
+        state: "Washington",
+        country: "United State",
         address: '${3284 + index} Skyview Lane, WA 98001',
-        imageUrl:
-            'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+        imageUrl: [
+          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+        ],
         status: index % 3 == 0
             ? 'Active'
             : index % 3 == 1

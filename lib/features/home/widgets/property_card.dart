@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:template/features/home/models/property_model.dart';
 import 'package:template/features/home/widgets/property_image.dart';
 import 'package:template/features/home/widgets/property_info.dart';
+import 'package:template/routes/routes_name.dart';
 
 class PropertyCard extends StatelessWidget {
   final PropertyModel property;
@@ -15,7 +16,7 @@ class PropertyCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         // Navigate to property details
-        Get.toNamed('/property-details', arguments: property);
+        Get.toNamed(RoutesName.propertyDetail, arguments: property);
       },
       child: Container(
         margin: EdgeInsets.only(bottom: 16.h),

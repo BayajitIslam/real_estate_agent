@@ -16,7 +16,7 @@ class PropertyImage extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(16.r),
           child: Image.network(
-            property.imageUrl,
+            property.imageUrl[0],
             height: 193.h,
             width: double.infinity,
             fit: BoxFit.cover,

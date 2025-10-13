@@ -1,5 +1,6 @@
 class RoutesName {
   static const String home = "/home";
+  static const String propertyDetail = "/propertyDetail";
   static const String homeContent = "/homeContent";
   static const String chatListScreen = "/chatListScreen";
   static const String chatConversation = "/chatConversationAScreen";
