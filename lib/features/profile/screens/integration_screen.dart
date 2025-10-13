@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:template/core/constants/app_colors.dart';
 import 'package:template/core/constants/app_image_const.dart';
 import 'package:template/core/constants/app_string.dart';
+import 'package:template/features/profile/models/integration_model.dart';
+import 'package:template/features/profile/widgets/social_connection_tile.dart';
 import 'package:template/features/widgets/circle_button_with_border.dart';
 import 'package:template/features/widgets/custom_search_bar.dart';
 
 class IntegrationScreen extends StatelessWidget {
   const IntegrationScreen({super.key});
 
+  // integration connected or not
+  final bool isConnected = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        forceMaterialTransparency: true,
         leadingWidth: 70.w,
         leading: CircleButtonWithBorder(
           isIcon: true,
@@ -42,65 +46,20 @@ class IntegrationScreen extends StatelessWidget {
               onChanged: (_) {},
             ),
 
-            //
-            Container(
-              width: double.infinity,
-              margin: EdgeInsets.only(top: 16),
-              padding: EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: AppColors.cardBackground,
-                borderRadius: BorderRadius.circular(16),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  //icon and connected
-                  Row(
-                    children: [
-                      Container(
-                        height: 48.h,
-                        width: 48.w,
-                        decoration: BoxDecoration(
-                          color: AppColors.background,
-                          borderRadius: BorderRadius.circular(16),
-                        ),
-                        padding: EdgeInsets.all(12),
-                        child: SvgPicture.asset(
-                          AppImages.googleSvgIcon,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ],
-                  ),
-
-                  //platform name
-                  SizedBox(height: 16.h),
-                  Text(
-                    AppString.facebook,
-                    style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 20.sp,
-                      height: 1,
-                      letterSpacing: 0,
-                    ),
-                  ),
-
-                  //desctiption
-                  SizedBox(height: 12.h),
-                  Text(
-                    AppString.accesAnsShare,
-                    style: Theme.of(context).textTheme.labelMedium!.copyWith(
-                      fontWeight: FontWeight.w400,
-                      color: AppColors.bodyTextv2,
-                      fontSize: 12.sp,
-                      height: 1,
-                      letterSpacing: 0,
-                    ),
-                  ),
-
-                  //connected disconcceted
-                  SizedBox(height: 16.h),
-                ],
+            //all social tile here
+            SizedBox(height: 16),
+            Expanded(
+              child: ListView.builder(
+                itemCount: _simpleIntegrations.length,
+                itemBuilder: (context, index) {
+                  //individual social inforamtion
+                  final socialInfo = _simpleIntegrations[index];
+                  return SocialConnectionTile(
+                    icon: socialInfo.icon,
+                    socialName: socialInfo.name,
+                    isConnected: socialInfo.isConnected,
+                  );
+                },
               ),
             ),
           ],
@@ -109,3 +68,11 @@ class IntegrationScreen extends StatelessWidget {
     );
   }
 }
+
+//sample data
+final List<IntegrationModel> _simpleIntegrations = [
+  IntegrationModel(name: AppString.facebook, icon: AppImages.facebookSvgIcon),
+  IntegrationModel(name: AppString.google, icon: AppImages.googleSvgIcon),
+  IntegrationModel(name: AppString.x, icon: AppImages.twiterXIcon),
+  IntegrationModel(name: AppString.instagram, icon: AppImages.instramIcon),
+];

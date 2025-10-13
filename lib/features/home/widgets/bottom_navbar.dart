@@ -9,8 +9,13 @@ import 'package:template/features/home/controllers/navigation_controller.dart';
 // Custom Bottom Navigation Bar Widget (Stateless with GetX)
 class CustomBottomNavBar extends StatelessWidget {
   final String? profileImageUrl;
+  final void Function()? onTap;
 
-  const CustomBottomNavBar({super.key, this.profileImageUrl});
+  const CustomBottomNavBar({
+    super.key,
+    this.profileImageUrl,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +42,7 @@ class CustomBottomNavBar extends StatelessWidget {
                   1,
                   navController,
                 ),
-                _buildCenterFAB(),
+                _buildCenterFAB(navController),
                 _buildNavItem(
                   AppImages.chatIcon,
                   AppImages.chatOutlineIcon,
@@ -71,19 +76,27 @@ class CustomBottomNavBar extends StatelessWidget {
     );
   }
 
-  Widget _buildCenterFAB() {
+  Widget _buildCenterFAB(NavigationController controller) {
+    bool isOpen = controller.isBottomSheetOpen.value;
     return GestureDetector(
       onTap: () {
         //<================================== Choose story or add new property ==========================>
       },
-      child: Container(
-        width: 48.w,
-        height: 48.h,
-        decoration: BoxDecoration(
-          color: AppColors.buttonBgYellow,
-          shape: BoxShape.circle,
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          width: 48.w,
+          height: 48.h,
+          decoration: BoxDecoration(
+            color: AppColors.buttonBgYellow,
+            shape: BoxShape.circle,
+          ),
+          child: Icon(
+            isOpen ? Icons.close : Icons.add,
+            color: AppColors.black70,
+            size: 24.sp,
+          ),
         ),
-        child: Icon(Icons.add, color: AppColors.black70, size: 24.sp),
       ),
     );
   }

@@ -42,6 +42,8 @@ class AppString {
   static const String sanFrancisco = "San Francisco";
 
   //<=====================   Your Listing ====================>
+  static const String newListing = "New Listing";
+  static const String story = "Story";
   static const String boost = "Boost";
   static const String accepted = "Accepted";
   static const String waiting = "Waiting";

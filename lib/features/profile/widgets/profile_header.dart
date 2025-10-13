@@ -38,6 +38,15 @@ class ProfileHeader extends StatelessWidget {
                     ),
                     decoration: BoxDecoration(
                       color: AppColors.buttonBgYellow,
+                      gradient: LinearGradient(
+                        begin: AlignmentGeometry.topCenter,
+                        end: AlignmentGeometry.bottomCenter,
+                        colors: [AppColors.yellow, AppColors.orange],
+                      ),
+                      border: Border.all(
+                        color: AppColors.buttonBgYellow,
+                        width: 1,
+                      ),
                       borderRadius: BorderRadius.circular(111.r),
                     ),
                     child: Row(
