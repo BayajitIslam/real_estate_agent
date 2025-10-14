@@ -57,12 +57,13 @@ class YourListingController extends GetxController {
         country: "United State",
         address: '${3284 + index} Skyview Lane, WA 98001',
         imageUrl: [
-          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
-          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
-          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
-          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
-          'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+          'https://i.pinimg.com/736x/2d/97/1b/2d971b73ede32297efb13b7ef9c0e671.jpg',
+          'https://i.pinimg.com/736x/2d/97/1b/2d971b73ede32297efb13b7ef9c0e671.jpg',
+          'https://i.pinimg.com/736x/2d/97/1b/2d971b73ede32297efb13b7ef9c0e671.jpg',
+          'https://i.pinimg.com/736x/2d/97/1b/2d971b73ede32297efb13b7ef9c0e671.jpg',
+          'https://i.pinimg.com/736x/2d/97/1b/2d971b73ede32297efb13b7ef9c0e671.jpg',
         ],
+        facilities: ["Garage", "Garage", "Garage", "Garage"],
         status: index % 3 == 0
             ? 'Active'
             : index % 3 == 1

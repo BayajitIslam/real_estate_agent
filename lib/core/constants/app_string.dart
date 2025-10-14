@@ -97,6 +97,7 @@ Request information today, we will contact you immediately.""";
   static const String propertyDetails = "Property Details";
   static const String infoNecessaryTocreate =
       "This information is necessary to create the listing.";
+       static const String showLess = "Show less";
 
   //<=====================   Chat list Screen ====================>
   static const String searchYourChat = "Search your chat";

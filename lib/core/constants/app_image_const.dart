@@ -35,5 +35,9 @@ class AppImages {
   static const String googleSvgIcon = "assets/icons/google_svg.svg";
   static const String twiterXIcon = "assets/icons/twiterX.svg";
   static const String instramIcon = "assets/icons/instagram.svg";
-  static const String deletIcon = "assets/icons/delet.svg";
+  static const String deletIcon = "assets/icons/delete.svg";
+  static const String energyRatingIcon = "assets/icons/energy_rating.svg";
+  static const String emisonIcon = "assets/icons/emision.svg";
+  static const String consumptionIcon = "assets/icons/consumption.svg";
+  static const String pdfIcon = "assets/icons/pdf_icon.svg";
 }

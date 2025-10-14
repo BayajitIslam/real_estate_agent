@@ -14,6 +14,7 @@ class PropertyModel {
   final String state;
   final String country;
   final List<String> imageUrl;
+  final List<String> facilities;
   final String status;
   final String listingDate;
   final bool isBoosted;
@@ -33,8 +34,10 @@ class PropertyModel {
     required this.country,
     required this.address,
     required this.imageUrl,
+    required this.facilities,
     required this.status,
     required this.listingDate,
+    
     this.isBoosted = false,
     this.description = AppString.dummyDesctiption,
   });
