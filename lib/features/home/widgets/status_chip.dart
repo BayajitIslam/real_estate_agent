@@ -15,6 +15,8 @@ class StatusChip extends StatelessWidget {
         return Colors.orange;
       case 'sold':
         return Colors.red;
+      case 'waiting':
+        return AppColors.yellow;
       default:
         return AppColors.bodyTextv1;
     }
@@ -42,9 +44,10 @@ class StatusChip extends StatelessWidget {
           SizedBox(width: 6.w),
           Text(
             status,
-            style: Theme.of(
-              context,
-            ).textTheme.titleMedium?.copyWith(fontSize: 14),
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
           ),
         ],
       ),

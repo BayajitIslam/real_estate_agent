@@ -6,6 +6,7 @@ import 'package:template/core/constants/app_string.dart';
 import 'package:template/features/profile/widgets/connection_status_button.dart';
 import 'package:template/features/profile/widgets/switch_button.dart';
 
+// ignore: must_be_immutable
 class SocialConnectionTile extends StatefulWidget {
   SocialConnectionTile({
     super.key,

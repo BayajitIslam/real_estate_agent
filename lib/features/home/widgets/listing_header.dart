@@ -47,7 +47,7 @@ class ListingHeader extends GetView<YourListingController> {
             child: CircleAvatar(
               radius: 24.r,
               backgroundColor: AppColors.buttonBackground,
-              child: SvgPicture.asset(AppImages.camaraIcon,fit: BoxFit.cover,)
+              child: SvgPicture.asset(AppImages.camaraIcon, fit: BoxFit.cover),
             ),
           ),
         ],

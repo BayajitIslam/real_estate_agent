@@ -4,6 +4,7 @@ import 'package:template/features/auth/screens/onboarding_screen.dart';
 import 'package:template/features/auth/screens/sign_in_screen.dart';
 import 'package:template/features/auth/screens/sign_up_screen.dart';
 import 'package:template/features/auth/screens/whatsapp_ai_notification.dart';
+import 'package:template/features/calendar/bindings/calendar_binding.dart';
 import 'package:template/features/chat/screens/chat_conversation_screen.dart';
 import 'package:template/features/chat/screens/chat_list_screens.dart';
 import 'package:template/features/home/bindings/home_binding.dart';
@@ -22,7 +23,7 @@ class AppRoutes {
       name: RoutesName.home,
       page: () => HomeScreen(),
       transition: Transition.rightToLeft,
-      bindings: [NavigationBinding(), YourListingBinding(), ProfileBinding(),],
+      bindings: [NavigationBinding(), YourListingBinding(), ProfileBinding(),CalendarBinding()],
     ),
     GetPage(
       name: RoutesName.homeContent,

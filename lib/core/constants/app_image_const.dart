@@ -40,4 +40,8 @@ class AppImages {
   static const String emisonIcon = "assets/icons/emision.svg";
   static const String consumptionIcon = "assets/icons/consumption.svg";
   static const String pdfIcon = "assets/icons/pdf_icon.svg";
+  static const String kanbanBlackIcon = "assets/icons/Kanban _black.svg";
+  static const String kanbanGreyIcon = "assets/icons/Kanban_grey.svg";
+  static const String cardThreeGreyIcon = "assets/icons/CardsThree _grey.svg";
+  static const String cardThreeBlackIcon = "assets/icons/CardsThree_black.svg";
 }

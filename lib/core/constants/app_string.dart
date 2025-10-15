@@ -97,7 +97,7 @@ Request information today, we will contact you immediately.""";
   static const String propertyDetails = "Property Details";
   static const String infoNecessaryTocreate =
       "This information is necessary to create the listing.";
-       static const String showLess = "Show less";
+  static const String showLess = "Show less";
 
   //<=====================   Chat list Screen ====================>
   static const String searchYourChat = "Search your chat";
@@ -127,4 +127,14 @@ Request information today, we will contact you immediately.""";
   static const String disconnected = "Disconnected";
   static const String x = "X";
   static const String instagram = "Instagram";
+
+  //<===================== Calendar Screen ====================>
+  static const String tourRequest = "Tour request";
+  static const String accept = "Accept";
+  static const String decline = "Decline";
+  static const String date = "Date";
+  static const String time = "Time";
+  static const String buyer = "Buyer";
+  static const String calender = "Calendar";
+  static const String totalAppointment = "Total appointment";
 }
