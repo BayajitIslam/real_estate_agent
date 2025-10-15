@@ -41,6 +41,29 @@ class AppString {
       "Leo ullamcorper placerat habitasse orci laoreet facilisis eget id. Ullamcorper augue.";
   static const String sanFrancisco = "San Francisco";
 
+  //<=====================   Publish Listing ====================>
+  static const String addNewPropertyList = "Add a New Property Listing";
+  static const String selectUpto9image = "Select up to 9 Image(s)";
+  static const String uploadVideo = "Upload Video";
+  static const String uploadFloorplan = "Upload Floor plan";
+  static const String embed360View = "Embed 360 View";
+  static const String saveToDraft = "Save to draft";
+  static const String yourAdress = "Your address";
+  static const String yourAdressLine2 = "Address line 2";
+  static const String selectCountry = "Select country";
+  static const String enterPrice = "Enter price";
+  static const String addMedia = "Add Media";
+  static const String loggedinAs = "Logged in as ";
+  static const String autoFillMyInformation = "Autofill my information";
+  static const String countryCode = "Country code";
+  static const String phoneNumber = "Phone number";
+  static const String enterDescription = "Enter description";
+  static const String uploadMore = "Upload more";
+  static const String rating = "Rating";
+  static const String addMore = "Add more";
+  static const String addFacilities = "Add facilities";
+  static const String amount = "Amount";
+
   //<=====================   Your Listing ====================>
   static const String newListing = "New Listing";
   static const String story = "Story";
@@ -92,7 +115,6 @@ Request information today, we will contact you immediately.""";
   static const String negotiationRange = "Negotiation Range";
   static const String expiryDate = "Expiry Date";
   static const String documents = "Documents";
-  static const String uploadMore = "Upload more";
   static const String contactInformation = "Contact information";
   static const String propertyDetails = "Property Details";
   static const String infoNecessaryTocreate =

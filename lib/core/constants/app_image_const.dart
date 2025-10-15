@@ -44,4 +44,9 @@ class AppImages {
   static const String kanbanGreyIcon = "assets/icons/Kanban_grey.svg";
   static const String cardThreeGreyIcon = "assets/icons/CardsThree _grey.svg";
   static const String cardThreeBlackIcon = "assets/icons/CardsThree_black.svg";
+  static const String mediaIcon = "assets/icons/media.svg";
+  static const String uploadVideo = "assets/icons/uploadVideo.svg";
+  static const String uploadFlorePlane = "assets/icons/uploadFlorePlane.svg";
+  static const String uploadEmled360View = "assets/icons/upload360view.svg";
+  static const String arrowDown = "assets/icons/arrow_down.svg";
 }

@@ -10,6 +10,7 @@ import 'package:template/features/home/controllers/navigation_controller.dart';
 import 'package:template/features/home/screens/your_listing_screen.dart';
 import 'package:template/features/home/widgets/bottom_navbar.dart';
 import 'package:template/features/profile/screens/profile_screens.dart';
+import 'package:template/routes/routes_name.dart';
 
 class HomeScreen extends GetView<YourListingBinding> {
   HomeScreen({super.key});
@@ -83,6 +84,7 @@ class HomeScreen extends GetView<YourListingBinding> {
                         ElevatedButton.icon(
                           onPressed: () {
                             //<=====================   New Listing Routing =====================>
+                            Get.toNamed(RoutesName.publishListScreen);
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.transparent,

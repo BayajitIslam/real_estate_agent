@@ -170,7 +170,7 @@ class AppointmentCardWidget extends StatelessWidget {
                     Text(
                       AppString.date,
                       style: TextStyle(
-                        fontSize: 12.sp,
+                        fontSize: 14.sp,
                         color: const Color(0xFF838C94),
                       ),
                     ),

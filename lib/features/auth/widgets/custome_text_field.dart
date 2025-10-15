@@ -6,14 +6,18 @@ class CustomTextField extends StatefulWidget {
     super.key,
     required this.hintText,
     this.isPassword = false,
+    this.suffixIconEnable = false,
     this.prefixIcon,
     this.controller,
     this.keyboardType,
+    this.suffixIcon,
   });
 
   final String hintText;
   final bool isPassword;
+  final bool suffixIconEnable;
   final IconData? prefixIcon;
+  final IconData? suffixIcon;
   final TextEditingController? controller;
   final TextInputType? keyboardType;
 
@@ -51,6 +55,14 @@ class _CustomTextFieldState extends State<CustomTextField> {
                     _obscureText = !_obscureText;
                   });
                 },
+              )
+            : widget.suffixIconEnable
+            ? Transform.rotate(
+                angle: -90 * 3.1416 / 180,
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.arrow_back_ios),
+                ),
               )
             : null,
         contentPadding: const EdgeInsets.symmetric(
