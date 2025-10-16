@@ -40,7 +40,7 @@ class HomeScreen extends GetView<YourListingBinding> {
             builder: (context) {
               return Padding(
                 padding: EdgeInsets.only(
-                  bottom: 92.h, // space for BottomNavBar height
+                  bottom: 72.dg, // space for BottomNavBar height
                 ),
                 child: Container(
                   width: double.infinity,

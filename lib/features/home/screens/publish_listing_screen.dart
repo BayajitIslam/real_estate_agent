@@ -43,7 +43,7 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
         ),
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -62,10 +62,11 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
                   Text(AppString.selectUpto9image, style: _hintStyle()),
 
                   //==================== Selected Image =====================
-                  SizedBox(height: 12.h),
+                  SizedBox(height: 16.h),
                   _mediaGrid(),
 
                   //==================== Upload Video =====================
+                  SizedBox(height: 16.h),
                   _uploadButton(
                     AppImages.uploadVideo,
                     AppString.uploadVideo,
@@ -89,6 +90,7 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
                   //==================== delet and Save To Draft &  Continue =================
                   SizedBox(height: 16.h),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       //Delet Button
                       CircleAvatar(
@@ -100,6 +102,7 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
                       //Save To Draft Button
                       SizedBox(width: 4.w),
                       Expanded(
+                        flex: 1,
                         child: OutlinedButton(
                           onPressed: () {
                             //Save To Draft Button Function
@@ -117,7 +120,7 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
                             AppString.saveToDraft,
                             style: TextStyle(
                               color: AppColors.whiteText,
-                              fontSize: 14.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -127,6 +130,7 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
                       //Continue Button
                       SizedBox(width: 4.w),
                       Expanded(
+                        flex: 1,
                         child: OutlinedButton(
                           onPressed: () {
                             //Continue Button Function
@@ -144,7 +148,7 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
                             AppString.continueText,
                             style: TextStyle(
                               color: AppColors.black,
-                              fontSize: 14.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
