@@ -13,6 +13,7 @@ import 'package:template/features/home/screens/property_detail_view.dart';
 import 'package:template/features/home/screens/publish_listing_screen.dart';
 import 'package:template/features/home/screens/your_listing_screen.dart';
 import 'package:template/features/home/screens/home_screens.dart';
+import 'package:template/features/home/widgets/property_story_screen.dart';
 import 'package:template/features/profile/bindings/profile_binding.dart';
 import 'package:template/features/profile/screens/integration_screen.dart';
 import 'package:template/features/profile/screens/profile_screens.dart';
@@ -91,6 +92,11 @@ class AppRoutes {
     GetPage(
       name: RoutesName.publishListScreen,
       page: () => PublishListingScreen(),
+      transition: Transition.rightToLeft,
+    ),
+    GetPage(
+      name: RoutesName.propertyStoryScreen,
+      page: () => PropertyStoryScreen(),
       transition: Transition.rightToLeft,
     ),
   ];

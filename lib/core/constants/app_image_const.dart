@@ -50,4 +50,5 @@ class AppImages {
   static const String arrowDown = "assets/icons/arrow_down.svg";
   static const String sealCheck = "assets/icons/checkSvg.svg";
   static const String verifiedIcon = "assets/icons/verifiedIcon.svg";
+  static const String camaerIconOutline = "assets/icons/camaraOutline.svg";
 }
