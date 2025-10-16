@@ -138,6 +138,7 @@ Request information today, we will contact you immediately.""";
   static const String propertiesSold = "Properties sold";
   static const String storyUploaded = "Story uploaded";
   static const String yourBioHere = "Your Bio Here";
+   static const String verified = "Verified";
 
   //<=====================   Profile Integration Screen ====================>
   static const String searchPlatform = "Search platform";

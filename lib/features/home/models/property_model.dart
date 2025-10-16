@@ -37,7 +37,7 @@ class PropertyModel {
     required this.facilities,
     required this.status,
     required this.listingDate,
-    
+
     this.isBoosted = false,
     this.description = AppString.dummyDesctiption,
   });

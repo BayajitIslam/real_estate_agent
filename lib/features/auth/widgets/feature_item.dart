@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:template/core/constants/app_colors.dart';
 import 'package:template/core/constants/app_image_const.dart';
 
@@ -19,7 +20,7 @@ class FeatureItem extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // Circle icon
-        Image.asset(AppImages.sealCheck, fit: BoxFit.cover),
+        SvgPicture.asset(AppImages.sealCheck, fit: BoxFit.cover),
 
         // Texts
         SizedBox(width: 12.w),

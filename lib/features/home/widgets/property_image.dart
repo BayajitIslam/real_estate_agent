@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:template/core/constants/app_colors.dart';
+import 'package:template/core/constants/app_image_const.dart';
+import 'package:template/core/constants/app_string.dart';
 import 'package:template/features/home/models/property_model.dart';
 
 class PropertyImage extends StatelessWidget {
   final PropertyModel property;
 
   const PropertyImage({super.key, required this.property});
+
+  final bool isVeryfied = true;
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +39,38 @@ class PropertyImage extends StatelessWidget {
               );
             },
           ),
+        ),
+
+        //<================================== Verified Badge ==========================>
+        Positioned(
+          top: 12.h,
+          left: 12.w,
+          child: isVeryfied
+              ? Container(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 12.w,
+                    vertical: 4.h,
+                  ),
+
+                  decoration: BoxDecoration(
+                    color: AppColors.buttonBgYellow,
+                    borderRadius: BorderRadius.circular(32),
+                  ),
+                  child: Row(
+                    children: [
+                      SvgPicture.asset(AppImages.verifiedIcon),
+                      SizedBox(width: 8.w),
+                      Text(
+                        AppString.verified,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 14.sp,
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              : SizedBox.shrink(),
         ),
 
         //<================================== Add To Fav ==========================>

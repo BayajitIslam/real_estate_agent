@@ -5,7 +5,6 @@ class AppImages {
   static const String realEstateLogo = "assets/images/logo.png";
   static const String googleIcon = "assets/images/google.png";
   static const String facebookIcon = "assets/images/facebook.png";
-  static const String sealCheck = "assets/images/SealCheck.png";
   static const String defaultIcon = "assets/images/profile.jpg";
 
   //<=============================== All Svg Icon Image =============================>
@@ -49,4 +48,6 @@ class AppImages {
   static const String uploadFlorePlane = "assets/icons/uploadFlorePlane.svg";
   static const String uploadEmled360View = "assets/icons/upload360view.svg";
   static const String arrowDown = "assets/icons/arrow_down.svg";
+  static const String sealCheck = "assets/icons/checkSvg.svg";
+  static const String verifiedIcon = "assets/icons/verifiedIcon.svg";
 }
