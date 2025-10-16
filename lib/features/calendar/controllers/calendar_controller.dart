@@ -3,7 +3,9 @@ import 'package:get/get.dart';
 class CalendarController extends GetxController {
   // Page Navigation - 2 buttons toggle
   var selectedButton = 0.obs; // 0 = Calendar Button, 1 = Grid Button
-  
+
+  var today = DateTime.now().obs;
+
   // Appointments
   var totalAppointments = 14.obs;
   var appointments = <AppointmentModel>[].obs;
@@ -29,6 +31,11 @@ class CalendarController extends GetxController {
       ),
     );
   }
+
+  // On day selected - update controller's today
+  void onDaySelect(DateTime day, DateTime focusDay) {
+    today.value = day;
+  }
 }
 
 // Simple Model
@@ -36,8 +43,5 @@ class AppointmentModel {
   final String id;
   final String title;
 
-  AppointmentModel({
-    required this.id,
-    required this.title,
-  });
+  AppointmentModel({required this.id, required this.title});
 }
