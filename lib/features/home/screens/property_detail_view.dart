@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:template/core/constants/app_colors.dart';
 import 'package:template/core/constants/app_string.dart';
 import 'package:template/features/home/models/property_model.dart';
-import 'package:template/features/home/widgets/additonal_information.dart';
+import 'package:template/features/home/widgets/additonal_information_view_section.dart';
 import 'package:template/features/home/widgets/contact_information_card.dart';
 import 'package:template/features/home/widgets/document_section_card.dart';
 import 'package:template/features/home/widgets/key_information.dart';

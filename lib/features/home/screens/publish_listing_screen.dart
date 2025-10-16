@@ -9,6 +9,7 @@ import 'package:template/features/auth/widgets/custome_checkbox.dart';
 import 'package:template/features/auth/widgets/custome_text_field.dart';
 import 'package:template/features/home/widgets/contact_information_card.dart';
 import 'package:template/features/home/widgets/dotted_border_box.dart';
+import 'package:template/features/home/widgets/additional_information_add_section.dart';
 import 'package:template/features/widgets/circle_button_with_border.dart';
 
 class PublishListingScreen extends StatefulWidget {
@@ -280,59 +281,12 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
             ),
 
             SizedBox(height: 12.h),
-            Row(
-              children: [
-                Expanded(child: _dropdownField("Area size")),
-                SizedBox(width: 12.w),
-                Expanded(child: _dropdownField("Living space")),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(child: _dropdownField("Bedroom")),
-                SizedBox(width: 12.w),
-                Expanded(child: _dropdownField("Bathroom")),
-              ],
-            ),
 
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [_chip("Garage"), _outlinedChip("+ Add facilities")],
-            ),
-
-            SizedBox(height: 12.h),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [_chip("Garage"), _outlinedChip("+ Add more")],
-            ),
-
-            Row(
-              children: [
-                Expanded(child: _dropdownField("Rating")),
-                SizedBox(width: 12.w),
-                Expanded(child: _dropdownField("Consumption")),
-              ],
-            ),
-
-            SizedBox(height: 12.h),
-            Wrap(
-              spacing: 8,
-              children: [
-                _chip("Certification.pdf"),
-                _outlinedChip("+ Upload more"),
-              ],
-            ),
-
-            SizedBox(height: 24.h),
-            _sectionTitle("Listing description"),
-            _textArea("Enter description"),
-
-            SizedBox(height: 24.h),
+            //Additonal Information Section
+            AdditionalInformationAddSection(),
 
             //Contact Informaton Here
-            SizedBox(height: 40.h),
+            SizedBox(height: 16.h),
             Container(
               decoration: BoxDecoration(
                 color: AppColors.cardBackground,
@@ -554,24 +508,6 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
   TextStyle _hintStyle() =>
       TextStyle(fontSize: 14.sp, color: AppColors.bodyTextv2);
 
-  Widget _dropdownField(String hint) {
-    return Padding(
-      padding: EdgeInsets.only(bottom: 12.h),
-      child: DropdownButtonFormField<String>(
-        decoration: InputDecoration(
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.r)),
-          contentPadding: EdgeInsets.symmetric(
-            horizontal: 16.w,
-            vertical: 14.h,
-          ),
-        ),
-        hint: Text(hint),
-        items: const [],
-        onChanged: (_) {},
-      ),
-    );
-  }
-
   Widget _mediaGrid() {
     return GridView.builder(
       physics: const NeverScrollableScrollPhysics(),
@@ -589,12 +525,43 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
         }
         return GestureDetector(
           onTap: () {},
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(8.r),
-            child: Image.network(
-              'https://i.pinimg.com/736x/2d/97/1b/2d971b73ede32297efb13b7ef9c0e671.jpg',
-              fit: BoxFit.cover,
-            ),
+          child: Stack(
+            children: [
+              /// ---- Image ----
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8.r),
+                child: Image.network(
+                  'https://i.pinimg.com/736x/2d/97/1b/2d971b73ede32297efb13b7ef9c0e671.jpg',
+                  fit: BoxFit.cover,
+                  width: double.infinity,
+                  height: 119.h,
+                ),
+              ),
+
+              /// ---- Top-right button ----
+              Positioned(
+                top: 8,
+                right: 8,
+                child: Container(
+                  width: 30.w,
+                  height: 30.h,
+                  decoration: BoxDecoration(
+                    color: AppColors.background,
+                    shape: BoxShape.circle,
+                  ),
+                  child: IconButton(
+                    icon: Icon(
+                      Icons.more_horiz_outlined,
+                      color: AppColors.black,
+                      size: 16.sp,
+                    ),
+                    onPressed: () {
+                      // action
+                    },
+                  ),
+                ),
+              ),
+            ],
           ),
         );
       },
@@ -631,21 +598,4 @@ class _PublishListingScreenState extends State<PublishListingScreen> {
       ),
     );
   }
-
-  Widget _chip(String label) =>
-      Chip(label: Text(label), backgroundColor: AppColors.cardBackground);
-
-  Widget _outlinedChip(String label) => Chip(
-    label: Text(label),
-    backgroundColor: Colors.transparent,
-    shape: StadiumBorder(side: BorderSide(color: AppColors.bodyTextv2)),
-  );
-
-  Widget _textArea(String hint) => TextField(
-    maxLines: 4,
-    decoration: InputDecoration(
-      hintText: hint,
-      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.r)),
-    ),
-  );
 }
