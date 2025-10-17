@@ -12,6 +12,7 @@ import 'package:template/features/widgets/custom_search_bar.dart';
 import 'package:template/features/home/widgets/empty_state.dart';
 import 'package:template/features/home/widgets/listing_header.dart';
 import 'package:template/features/home/widgets/property_card.dart';
+import 'package:template/routes/routes_name.dart';
 
 class YourListingScreen extends GetView<YourListingController> {
   const YourListingScreen({super.key});
@@ -93,7 +94,9 @@ class YourListingScreen extends GetView<YourListingController> {
                     (index) => HomeAgentStoryCard(
                       image: AppImages.defaultIcon,
                       name: "Alice",
-                      onPress: () {},
+                      onPress: () {
+                        Get.toNamed(RoutesName.propertyStoryScreen);
+                      },
                     ),
                   ),
                 ],

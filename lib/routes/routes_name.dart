@@ -9,6 +9,7 @@ class RoutesName {
   static const String integrationScreen = "/Integration";
   static const String propertyStoryScreen = "/propertyStoryScreen";
 
+
   //<===================== Auth Screen =====================>
   static const String signUp = "/signUpScreen";
   static const String onboarding = "/onboarding";
